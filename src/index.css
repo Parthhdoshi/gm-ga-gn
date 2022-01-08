@@ -1,5 +1,7 @@
 body {
-  margin: 0;
+  text-align: center;
+  margin: 5%;
+  padding-top: 15%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,6 +9,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media screen and (max-width: 450px) {
+  body {
+    text-align: center;
+    margin: 15%;
+    padding-top: 40%;
+  }
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
