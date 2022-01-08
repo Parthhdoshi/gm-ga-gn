@@ -4,8 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-let curDate = new Date(2020,5,5,20);
+let curDate = new Date();
 curDate = curDate.getHours();
+
+const d = new Date();
+let date = d.getDate();
+let day = d.getMonth()+1;
+let year = d.getFullYear();
+let min = d.getMinutes();
+
 
 let greeting = "";
 let cssStyle = {};
@@ -24,6 +31,7 @@ cssStyle.color = 'blue';
 ReactDOM.render(
   <>
   <h1>Hello sir, <span style={cssStyle}>{greeting}</span></h1>
+  <h1>Date:{date}-{day}-{year}<br/>{curDate}:{min} </h1>
   </>,
   document.getElementById('root')
 
